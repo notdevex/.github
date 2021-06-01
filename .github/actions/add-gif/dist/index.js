@@ -6143,10 +6143,9 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(186);
 const github = __nccwpck_require__(438);
-const octokit = github.getOctokit(core.getInput('GITHUB_TOKEN'))
 
 const action = async() => {
-
+  const octokit = github.getOctokit(core.getInput('GITHUB_TOKEN'))
   const { payload } = github.context
 
   const user = payload.review.user.login

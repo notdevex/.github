@@ -1,9 +1,8 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const octokit = github.getOctokit(core.getInput('GITHUB_TOKEN'))
 
 const action = async() => {
-
+  const octokit = github.getOctokit(core.getInput('GITHUB_TOKEN'))
   const { payload } = github.context
 
   const user = payload.review.user.login
