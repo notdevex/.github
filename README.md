@@ -1,6 +1,6 @@
 # .github
 
-Documentation on how `.github` repos, files and template repos work.
+Documentation on how `.github` repos, files and template repos work..
 
 https://docs.github.com/en/github/building-a-strong-community/creating-a-default-community-health-file
 
