@@ -1,0 +1,5 @@
+name: 'Add Gif to approval'
+description: 'This action adds a gif to any PR comment'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

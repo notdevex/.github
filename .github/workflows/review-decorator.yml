@@ -11,10 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Checkout Repo
-        run: echo '${{ toJSON(github)}}'
 
-      # - name: Run Action
-      #   uses: msyea/.github/actions/hello-world@master
-      #   with:
-      #     name: ${{ github.event.inputs.name }}
-      #     home: ${{ github.event.inputs.home }}
+      - name: Run Action
+      - uses: nodevex/.github/actions/add-gif@git-comment
