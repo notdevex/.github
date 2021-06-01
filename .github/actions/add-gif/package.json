@@ -1,0 +1,17 @@
+{
+  "name": "add-gif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0",
+    "build": "ncc build index.js --license licenses.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.3.0",
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.28.6"
+  }
+}

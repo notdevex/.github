@@ -1,0 +1,10 @@
+name: 'Add Gif to approval'
+description: 'This action adds a gif to any PR comment'
+inputs:
+  GITHUB_TOKEN:
+    description: 'Token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

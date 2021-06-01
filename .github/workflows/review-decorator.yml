@@ -1,0 +1,17 @@
+name: Review Decorator
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+
+jobs:
+  review-decorator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Run my action
+        uses: ./.github/actions/add-gif
+        with: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
