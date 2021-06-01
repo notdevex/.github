@@ -12,7 +12,7 @@ const action = async() => {
     repo: payload.repository.name,
     pull_number: payload.pull_request.number,
     review_id: payload.review.id,
-    body: `${payload.review.body}\n\n![${user} approves!](https://media.giphy.com/media/DhstvI3zZ598Nb1rFf/source.gif)`,
+    body: `${payload.review.body}\n\n![${user} approves!](https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif)`,
   })
 }
 
