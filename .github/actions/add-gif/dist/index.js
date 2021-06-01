@@ -6143,13 +6143,25 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(186);
 const github = __nccwpck_require__(438);
+const octokit = github.getOctokit(github.token)
 
-try {
+const action = async() => {
+
   const payload = JSON.stringify(github.context.payload.review, undefined, 2)
   console.log(`The event payload: ${payload}`);
-} catch (error) {
-  core.setFailed(error.message);
+  const user = payload.review.user.login
+  
+  await octokit.pulls.updateReview({
+    owner: payload.repository.owner.login,
+    repo: payload.repository.name,
+    pull_number: payload.pull_request.number,
+    review_id: payload.review.id,
+    body: `${payload.review.body}\n\n![${user} approves!](https://media.giphy.com/media/DhstvI3zZ598Nb1rFf/source.gif)`,
+  })
 }
+
+action().catch(e => core.setFailed(e.message))
+
 })();
 
 module.exports = __webpack_exports__;
