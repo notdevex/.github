@@ -7,7 +7,7 @@ const action = async() => {
 
   const user = payload.review.user.login
   
-  await octokit.pulls.updateReview({
+  await octokit.rest.pulls.updateReview({
     owner: payload.repository.owner.login,
     repo: payload.repository.name,
     pull_number: payload.pull_request.number,
