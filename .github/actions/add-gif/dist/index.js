@@ -6147,8 +6147,8 @@ const octokit = github.getOctokit(core.getInput('GITHUB_TOKEN'))
 
 const action = async() => {
 
-  const payload = JSON.stringify(github.context.payload.review, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  const { payload } = github.context
+
   const user = payload.review.user.login
   
   await octokit.pulls.updateReview({
