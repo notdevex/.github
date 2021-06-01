@@ -14,4 +14,4 @@ jobs:
         with:
           ref: git-comment
       - name: Run my action
-        uses: ./.github/actions/gif-add
+        uses: ./.github/actions/add-gif
