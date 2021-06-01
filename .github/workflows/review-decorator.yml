@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Action
-        uses: notdevex/.github/actions/add-gif@git-comment
+        uses: .github/actions/add-gif
