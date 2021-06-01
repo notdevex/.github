@@ -9,8 +9,8 @@ jobs:
   review-decorator:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Checkout Repo
+        uses: actions/checkout@v2
 
       - name: Run Action
-      - uses: nodevex/.github/actions/add-gif@git-comment
+        uses: nodevex/.github/actions/add-gif@git-comment
