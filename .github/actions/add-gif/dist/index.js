@@ -6143,7 +6143,7 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(186);
 const github = __nccwpck_require__(438);
-const octokit = github.getOctokit(github.token)
+const octokit = github.getOctokit(GITHUB_TOKEN)
 
 const action = async() => {
 
