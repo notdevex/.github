@@ -30,4 +30,4 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: testResult.json
-      - run: cat testResult.json    
+      - run: jq . testResult.json    
