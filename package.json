@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test:workflow_dispatch": "act -e test/events/repository_dispatch.json workflow_dispatch"
+    "test:workflow_dispatch": "act -e test/events/repository_dispatch.json workflow_dispatch",
+    "test": "jest --json --outputFile=testResult.json"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/notdevex/.github/issues"
   },
-  "homepage": "https://github.com/notdevex/.github#readme"
+  "homepage": "https://github.com/notdevex/.github#readme",
+  "dependencies": {
+    "jest": "^27.0.3"
+  }
 }
