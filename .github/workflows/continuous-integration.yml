@@ -17,6 +17,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm ci    
       - run: npm test
       - uses: actions/upload-artifact@v2
         with:
