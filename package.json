@@ -1,0 +1,22 @@
+{
+  "name": "notdevex-github",
+  "version": "1.0.0",
+  "description": "Documentation on how `.github` repos, files and template repos work..",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test:workflow_dispatch": "act -e test/events/repository_dispatch.json workflow_dispatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdevex/.github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notdevex/.github/issues"
+  },
+  "homepage": "https://github.com/notdevex/.github#readme"
+}

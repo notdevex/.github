@@ -26,3 +26,8 @@ SUPPORT.md         |
 # GitHub Actions Templates
 
 Templates must icon.
+
+
+# Testing
+
+Install https://github.com/nektos/act
