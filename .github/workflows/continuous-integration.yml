@@ -24,6 +24,7 @@ jobs:
           path: ./testResult.json
   download:
     runs-on: ubuntu-latest
+    needs: [test-upload]
     steps:    
       - uses: actions/download-artifact@v2
         with:
